@@ -13,7 +13,7 @@ Array.from(navLinks).forEach((e)=>{
   e.addEventListener('click',(c)=>{
     clickAudio.play();
     if(e.textContent == 'Cookies'){
-      window.location.href = `https://${window.location.host}`;
+      window.location.href = `https://${window.location.host}/cookie-clicker-3/`;
     }
     else if(e.textContent == 'Progress'){
       window.location.href = '?tab=progress';
@@ -51,7 +51,7 @@ const title = document.querySelector('title');
 const query = new URL(window.location.href).searchParams;
 
 if(query.getAll('tab') == 'cookies'){
-  window.location.href = `https://${window.location.host}/`;
+  window.location.href = `https://${window.location.host}/cookie-clicker-3/`;
 }
 else if(query.getAll('tab') == 'progress'){
   navLinks[0].classList = '';

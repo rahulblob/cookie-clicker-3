@@ -74,10 +74,10 @@ else if(query.getAll('tab') == 'reset'){
   title.textContent += ' - Reset';
   if(ghj){
     localStorage.clear();
-    window.location.href = `https://${window.location.host}/`;
+    window.location.href = `https://${window.location.host}/cookie-clicker-3/`;
   }
   else{
-    window.location.href = `https://${window.location.host}/`;
+    window.location.href = `https://${window.location.host}/cookie-clicker-3/`;
   }
 }
 
